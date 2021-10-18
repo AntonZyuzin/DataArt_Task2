@@ -3,17 +3,17 @@ package figures;
 public class Circle extends Figure {
 
     //радиус и диаметр
-    public Circle(int num1, int num2) {
-        super(num1, num2);
+    public Circle(int [] values) {
+        super(values);
     }
 
     @Override
     double calculateArea() {
-        return Math.PI * (num1 * num1);
+        return Math.PI * (values[0] * values[0]);
     }
 
     @Override
     double calculatePerimeter() {
-        return Math.PI * num2;
+        return Math.PI * 2 * values [0];
     }
 }

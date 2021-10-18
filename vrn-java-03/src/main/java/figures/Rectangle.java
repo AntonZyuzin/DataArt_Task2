@@ -3,17 +3,17 @@ package figures;
 public class Rectangle extends Figure{
 
     //длина ширина
-    public Rectangle(int num1, int num2) {
-        super(num1, num2);
+    public Rectangle(int [] values) {
+        super(values);
     }
 
     @Override
     double calculateArea() {
-        return num1 * num2;
+        return values[0] * values[1];
     }
 
     @Override
     double calculatePerimeter() {
-        return 2 * (num1 + num2);
+        return 2 * (values[0] + values[1]);
     }
 }

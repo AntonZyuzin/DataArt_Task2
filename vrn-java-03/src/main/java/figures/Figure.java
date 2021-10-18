@@ -2,15 +2,17 @@ package figures;
 
 public abstract class Figure {
 
-    int num1;
-    int num2;
+    int [] values;
 
-    Figure(int num1, int num2) {
-        this.num1 = num1;
-        this.num2 = num2;
+    Figure(int [] values) {
+        this.values = values;
     }
 
-    abstract double calculateArea();
+    double calculateArea() {
+        return values[0] * values[1];
+    }
 
-    abstract double calculatePerimeter();
+    double calculatePerimeter() {
+        return values[0] * values[1];
+    }
 }

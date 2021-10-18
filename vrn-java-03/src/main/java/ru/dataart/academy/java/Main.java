@@ -11,8 +11,8 @@ public class Main{
         Calculator calculator = new Calculator();
 
         Figure[] figures = {
-                new Circle(2, 4),
-                new Rectangle(3, 4)
+                new Circle(new int[] {1}),
+                new Rectangle(new int[] {1, 2})
         };
 
         System.out.println("Сумма площадей: " + calculator.calculateSumAreas(figures));
