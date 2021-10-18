@@ -2,7 +2,7 @@ package figures;
 
 public class Circle extends Figure {
 
-    //радиус и диаметр
+    //радиус
     public Circle(int [] values) {
         super(values);
     }
